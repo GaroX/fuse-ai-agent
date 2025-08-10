@@ -37,6 +37,9 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
+      - name: Build for Lambda
+        run: npm run build
+
       - name: Package to AWS Lambda
         run: npm run package
 
