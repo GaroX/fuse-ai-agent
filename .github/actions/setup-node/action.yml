@@ -23,5 +23,5 @@ runs:
           ${{ runner.os }}-node-
 
     - name: Install dependencies
-      run: npm ci --only=production
+      run: npm ci 
       shell: bash

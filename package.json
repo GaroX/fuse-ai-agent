@@ -7,7 +7,7 @@
     "build": "node esbuild.js",
     "build:watch": "node esbuild.js --watch",
     "offline": "nodemon --watch dist/index.js --exec 'serverless offline --stage dev'",
-    "package": "npm run build && zip -j lambda.zip dist/index.js",
+    "package": "zip -j lambda.zip dist/index.js",
     "smee": "smee -u https://smee.io/fuse-linear --target http://localhost:3000/webhook"
   },
   "author": "Alvaro Betancourt Hurtado",
